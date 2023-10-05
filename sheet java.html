@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript example 1</title>
+    <meta charset="utf-8">
+    <script>
+ function add() {
+ var num1 = parseInt(document.getElementById('n1').value);
+ var num2 = parseInt(document.getElementById('n2').value);
+ var result = num1 + num2;
+ document.getElementById('re').innerHTML = result;
+ }
+ function sub() {
+ var num1 = parseInt(document.getElementById('n1').value);
+ var num2 = parseInt(document.getElementById('n2').value);
+ var result = num1 - num2;
+ document.getElementById('re').innerHTML = result;
+ }
+ function mul() {
+ var num1 = parseInt(document.getElementById('n1').value);
+ var num2 = parseInt(document.getElementById('n2').value);
+ var result = num1 * num2;
+ document.getElementById('re').innerHTML = result;
+ }
+ function change() {
+ document.getElementById('n1').style.color = "blue";
+ document.getElementById('n2').style.color = "red";
+ }
+ function changeB() {
+ document.getElementById('n1').style.backgroundColor = "blue";
+ document.getElementById('n2').style.backgroundColor = "red";
+ }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="n1">number 1</label>
+        <input type=number id="n1"><br><br>
+        <label for="n2">number 2</label>
+        <input type=number id="n2"><br><br>
+        <input type=button onclick="add();" value="add">
+        <input type=button onclick="sub();" value="sub">
+        <input type=button onclick="mul();" value="mul">
+        <input type=button onclick="change();" value="change font_color">
+        <input type=button onclick="changeB();" value="change
+backgroundColor ">
+    </form>
+    <p id="re"></p>
+</body>
+</html>
